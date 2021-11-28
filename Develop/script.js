@@ -1,5 +1,18 @@
 // Assignment code here
 
+const generatePassword = () => {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var characters = "!@#$%^&*()";
+  var numbers = "0123456789"
+  var password = "";
+  var counter = 0;
+  var inclusionPrompt = window.prompt("Please specify ")
+  while (counter <= length){
+    password += alphabet[Math.floor(Math.random() * alphabet.length)];
+    counter++;
+  }
+  return password;
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
