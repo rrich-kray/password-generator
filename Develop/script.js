@@ -1,15 +1,22 @@
 // Assignment code here
 
+const alphabet = "abcdefghijklmnopqrstuvwxyz";
+const characters = "!@#$%^&*()0123456789";
+const all = alphabet + characters;
+
 const generatePassword = () => {
-  var alphabet = "abcdefghijklmnopqrstuvwxyz";
-  var characters = "!@#$%^&*()";
-  var numbers = "0123456789"
   var password = "";
   var counter = 0;
-  var inclusionPrompt = window.prompt("Please specify ")
+  var length = window.prompt("Please specify your desired password length");
+  var included = confirm("Select 'yes' to include all available character; select 'no' to include only numbers")
   while (counter <= length){
-    password += alphabet[Math.floor(Math.random() * alphabet.length)];
-    counter++;
+    if (included){
+      password += all[Math.floor(Math.random() * all.length)];
+      counter++;
+    } else {
+      password += alphabet[Math.floor(Math.random() * alphabet.length)]
+      counter++;
+    }
   }
   return password;
 }
