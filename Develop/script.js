@@ -1,17 +1,17 @@
 // Assignment code here
 
-const all = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()0123456789";
+const all = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()0123456789";
 const alphabet = all.slice(all.indexOf("a"), all.indexOf("z"));
-const alphabetCapital = all.slice(all.indexOf("A"), all.indexOf("Z"));
+const alphabetCapitalized = alphabet.toUpperCase();
 const special = all.slice(all.indexOf('!'), all.indexOf(')'));
 const numbers = all.slice(all.indexOf('0'), all.indexOf('9'));
-const options = [alphabet, alphabetCapital, special, numbers];
+const options = [alphabet, alphabetCapitalized, special, numbers];
 
 const generatePassword = () => {
   var password = "";
   var counter = 0;
   var length = window.prompt("Please specify a length between 8 and 128 characters for your password");
-  var content = window.prompt("Please specify any combination of '1' (alphabet), '2' (alphabet - capital ), '3' (special characters), or '4' (numbers). Separate your input with commas.");
+  var content = window.prompt("Please specify any combination of '1' (alphabet), '2' (alphabet - capitalized), '3' (special characters), or '4' (numbers). Separate your input with commas.");
   if (length >= 8 && length <= 128) {
     var choiceString = "" 
     content.replace(' ', '').split(',').forEach((choice) => {choiceString += options[choice-1]});
