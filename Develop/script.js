@@ -14,7 +14,7 @@ const generatePassword = () => {
   var content = window.prompt("Please specify '1' for 'all', '2' for 'alphanumeric', '3' for miscellaneous characters and numbers, or '4' for alphabetical and miscellaneous characters");
   if (length >= 8 && length <= 128) {
     var choiceString = "" 
-    content.replace(' ', '').split(',').forEach((choice) => {choiceString += options[choice]});
+    content.replace(' ', '').split(',').forEach((choice) => {choiceString += options[choice-1]});
     while (counter <= length){
       password += choiceString[Math.floor(Math.random() * choiceString.length)];
       counter++;
