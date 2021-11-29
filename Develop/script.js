@@ -11,7 +11,7 @@ const generatePassword = () => {
   var password = "";
   var counter = 0;
   var length = window.prompt("Please specify a length between 8 and 128 characters for your password");
-  var content = window.prompt("Please specify '1' for 'all', '2' for 'alphanumeric', '3' for miscellaneous characters and numbers, or '4' for alphabetical and miscellaneous characters");
+  var content = window.prompt("Please specify any combination of '1' (alphabet), '2' (alphabet - capital ), '3' (special characters), or '4' (numbers). Separate your input with commas.");
   if (length >= 8 && length <= 128) {
     var choiceString = "" 
     content.replace(' ', '').split(',').forEach((choice) => {choiceString += options[choice-1]});
