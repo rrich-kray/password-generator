@@ -8,11 +8,11 @@ This repository contains the HTML, CSS and Javascript code for the Random Passwo
 
 ![Random Password Generator Screenshot](./Develop/assets/images/RPG.png)
 
-With cybercrime becoming more prevalent by the day, securing your accounts with strong, randomized passwords is essential to maintaining peace of mind in your digital world. With the Random Password Generator, users can create fully custommized and completely random passwords that will secure their information from cyber criminals.
+In this day and age, securing your accounts with strong, randomized passwords is essential to maintaining peace of mind. With the Random Password Generator, users can create fully customized and completely random passwords that will secure their information from cyber criminals.
 
 ## Usage
 
-The Random Password Generator was designed with simplicity of use in mind. By pressing the 'generate password' button, the user will be presented with a series of prompts that allows them to customize the application's output.
+The Random Password Generator was designed with simplicity of use in mind. By pressing the 'generate password' button, the user will be presented with a series of prompts that allows them to customize their password.
 
 ![Length Prompt Screenshot](./Develop/assets/images/RPG2.png)
 
@@ -20,7 +20,7 @@ The first prompt allows the user to specify the length of the password. All leng
 
 ![Content Prompt Screenshot](./Develop/assets/images/RPG3.png)
 
-The next prompt allows the user to specify the actual content of thew password. The user has four choices; 1 and 2 to include lowercase and uppercase alphabetical characters, respectively, 3 for special characters and 4 for numbers. Users can opt to include any combination of these options.
+The next prompt allows the user to specify the actual content of the password. The user can specify 1 and 2 to include lowercase and uppercase alphabetical characters, respectively, 3 for special characters and 4 for numbers. Users can include any combination of these options.
 
 If invalid input is provided, the user will be presented with the following prompt and must reenter their input.
 
